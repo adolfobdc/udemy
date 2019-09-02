@@ -1,0 +1,11 @@
+Rails.application.routes.draw do
+  get 'home/bemvindo' => 'home#index'
+  
+  root 'home#index'
+
+  resources :addresses
+  resources :phones
+  resources :contacts #, except: [:edit]
+  resources :kinds
+  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+end

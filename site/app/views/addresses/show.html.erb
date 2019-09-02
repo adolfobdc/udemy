@@ -1,0 +1,26 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Street:</strong>
+  <%= @address.street %>
+</p>
+
+<p>
+  <strong>City:</strong>
+  <%= @address.city %>
+</p>
+
+<p>
+  <strong>State:</strong>
+  <%= @address.state %>
+</p>
+
+<p>
+  <strong>Contact:</strong>
+  <%= @address.contact.name %>
+</p>
+
+<div class="actions">
+    <%= link_to t('buttons.edit'), edit_address_path(@address), class: "button" %>
+    <%= link_to t('buttons.back'), addresses_path, class: "button"%>
+</div>
